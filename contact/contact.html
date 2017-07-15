@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body onload='document.getElementById("quickName").focus();'>
+<header>Contact Me</header>
+<script language="javascript" src="../script.js"></script>
+<nav>
+<a class="links" href="../about/about.html">About</a>
+<a class="links" href="#">Contact</a>
+<a class="links" href="../index.html">Home</a>
+  </nav>
+<form action="mailto:webartisantim@gmail.com" method="post">
+        
+          <input id="name" type="text" placeholder="Name" required=""/>
+      <label class="float-name" for="name">Name</label>
+        <br/>
+          <input id="email" type="email" placeholder="Email Address" required=""/>
+          <label class="float-email" for="email">Email Address</label>
+         <br/> 
+          <input id="phone" type="tel" placeholder="Phone Number" required=""/>
+          <label class="float-phone" for="phone">Phone Number</label>
+         <br/> 
+       <!--<input id="message" type="text" name="comment" size="50">-->
+          <textarea id="message" rows="5" placeholder="Message" required=""></textarea>
+          <label class="float-message" for="message">Message</label>
+        <br/>      <button class="send" type="submit">Send</button>
+        <!--not sure if this is needed.  It was in the simple email form
+<input type="submit" value="Send">
+<input type="reset" value="Reset">-->
+        </div>
+      </form>
+      <!--Side JavaScript form-->
+      <form id="sideForm">
+        <p><b>Type your name below for a quick greeting!</b></p>
+        <input type="text" name="message" id="quickName" placeholder="Type Name Here!">
+        
+      </form>
+      <div id="submitQG">
+<input type="submit" name="popup" id="test" onclick="greeting();">
+</div>
+<div id="display">
+        <p><span id="newGreeting"></span></p>
+</div>
+
+</body>
+</html>

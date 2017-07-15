@@ -15,6 +15,14 @@ body {
 	color: #DDFC48;
 }
 
+ul li {
+	display: inline;
+}
+
+ul {
+	list-style: none;
+}
+
 header {
 	font-family: Roboto;
 	font-size: 70px;
@@ -62,11 +70,19 @@ nav {
 	text-decoration: none;
 	font-size: 40px;
 	margin: 0 5px 0 5px;
+	width: 200px;
+	height: 50px;
 	border: 1px solid;
 	border-radius: 10px;
 	padding: 0 5px 0 5px;
+	background-color: #032300;
 	color: #DDFC48;
 }
+
+.links:hover {
+	opacity: 0.25;
+}
+
 
 h3 {
 	margin: 5px;
@@ -75,4 +91,9 @@ h3 {
 ol {
 	margin: 0 10px 10px 0;
 	padding: 0 0 10px 20px;
+}
+
+.background {
+	background-color: grey;
+	color: #032300;
 }
